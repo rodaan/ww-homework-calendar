@@ -96,6 +96,7 @@ class Calendar extends React.Component {
       <div {...this.props}>
         <div id="createEvent" className="hi">
           <div className="modal-content">
+            <h3>Event Information</h3>
             <input id="id" readOnly/>
             Title:<input id="title"/>
             Description:<input id="desc"/>
