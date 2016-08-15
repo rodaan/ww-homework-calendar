@@ -4,13 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server": "nodemon --delay 1.5 dev/server/server.js",
-    "dev": "npm run lint && (npm run watch-server & npm run dev-server & npm run watch-client)",
-    "test": "mocha test/browser.js test/**/*",
-    "test:watch": "mocha tests/client/components/* --compilers js:babel-core/register --watch --reporter min",
     "lint": "eslint --quiet src/",
     "start": "",
-    "watch-server": "babel --watch src/server -d dev/server",
     "watch-client": "webpack --watch --progress"
   },
   "keywords": [],
@@ -18,10 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.9.1",
-    "cors": "^2.7.1",
-    "dotenv": "^2.0.0",
-    "express": "^4.14.0",
-    "image-webpack-loader": "^1.8.0",
     "jquery": "^3.1.0",
     "moment": "^2.14.1",
     "react": "^0.14.7",
@@ -39,7 +30,6 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.5.0",
     "eslint-plugin-react": "^5.1.1",
-    "file-loader": "^0.9.0",
     "node-sass": "^3.8.0",
     "webpack": "^1.12.12"
   }

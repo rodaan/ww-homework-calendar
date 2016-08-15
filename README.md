@@ -9,8 +9,10 @@ put code in src!
 
 ### Installation
 ```sh
-$ 
+$ npm install
+$ npm run watch-client
 ```
+Open Index.html on an internet browser
 
 ### Usage
 
