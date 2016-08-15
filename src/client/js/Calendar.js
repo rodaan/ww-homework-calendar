@@ -41,9 +41,9 @@ class Calendar extends React.Component {
             title,
             start: new Date(this.startDate.getFullYear(), this.startDate.getMonth(),
               this.startDate.getDate(), this.startDate.getHours(), this.startDate.getMinutes(), 0),
-            end: new Date(this.startDate.getFullYear(), this.startDate.getMonth(),
-              this.startDate.getDate(), this.startDate.getHours(),
-              this.startDate.getMinutes() + duration, 0),
+            end: new Date(this.endDate.getFullYear(), this.endDate.getMonth(),
+              this.endDate.getDate(), this.endDate.getHours(),
+              this.endDate.getMinutes() + 30, 0),
             desc,
             id,
             duration,
@@ -57,9 +57,9 @@ class Calendar extends React.Component {
         title,
         start: new Date(this.startDate.getFullYear(), this.startDate.getMonth(),
           this.startDate.getDate(), this.startDate.getHours(), this.startDate.getMinutes(), 0),
-        end: new Date(this.startDate.getFullYear(), this.startDate.getMonth(),
-          this.startDate.getDate(), this.startDate.getHours(),
-          this.startDate.getMinutes() + duration, 0),
+        end: new Date(this.endDate.getFullYear(), this.endDate.getMonth(),
+          this.endDate.getDate(), this.endDate.getHours(),
+          this.endDate.getMinutes() + 30, 0),
         desc,
         id,
         duration,
@@ -101,11 +101,11 @@ class Calendar extends React.Component {
         <div id="createEvent" className="hi">
           <div className="modal-content">
             <h3>Event Information</h3>
+            <div className="modalElement">Start Date: {JSON.stringify(this.startDate)}</div>
             <input id="id" readOnly />
-            Title:<input id="title" />
-            Description:<input id="desc" />
-            Duration(in Minutes):<input id="duration" />
-            <div>
+            <div className="modalElement">Title:<input id="title" /></div>
+            <div className="modalElement">Description:<input id="desc" /></div>
+            <div className="modalElement">
               <button onClick={() => this.closeCreateEvent()}>Cancel</button>
               <button onClick={() => this.deleteEvent()}>Delete Event</button>
               <button onClick={() => this.confirmEvent()}>Confirm</button>

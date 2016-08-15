@@ -1,7 +1,7 @@
 {
   "name": "ww-homework-calendar-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple calendar app",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --quiet src/",

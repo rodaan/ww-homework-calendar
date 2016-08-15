@@ -82,3 +82,6 @@
 	#id{
 		display: none;
 	}
+	.modalElement{
+		padding: 5px;
+	}

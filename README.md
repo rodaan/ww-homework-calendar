@@ -1,25 +1,17 @@
 #ww-homework-calendar
 
-description
-
-put code in src!
+A simple calendar app.
 
 ### Version
-0.0.0
+1.0.0
 
 ### Installation
 ```sh
 $ npm install
 $ npm run watch-client
 ```
-Open Index.html on an internet browser
+Open Index.html on an internet browser and try it out!
 
-### Usage
-
-```js
-sample code here
-
-```    
 
 License
 ----
