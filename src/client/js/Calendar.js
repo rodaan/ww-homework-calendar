@@ -59,7 +59,7 @@ class Calendar extends React.Component {
           this.startDate.getDate(), this.startDate.getHours(), this.startDate.getMinutes(), 0),
         end: new Date(this.endDate.getFullYear(), this.endDate.getMonth(),
           this.endDate.getDate(), this.endDate.getHours(),
-          this.endDate.getMinutes() + 30, 0),
+          this.endDate.getMinutes(), 0),
         desc,
         id,
         duration,
